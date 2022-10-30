@@ -5,3 +5,7 @@ build-backend = "maturin"
 [project]
 name = "feature_store"
 version = "0.1.0"
+
+[dependencies]
+polars="*"
+pyarrow="*"
