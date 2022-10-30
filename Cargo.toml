@@ -1,0 +1,14 @@
+[package]
+name = "ignite-client"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "feature_store"
+crate-type = ["cdylib"]
+
+[dependencies]
+redis = "0.22.1"
+polars = { version = "0.24.3", features = ["lazy", "csv-file", "strings", "temporal", "dtype-duration", "dtype-categorical", "concat_str", "list", "list_eval", "rank", "lazy_regex"]}
+polars-arrow = "0.24.3"
+pyo3 = { version = "0.16.4", features = ["extension-module"] }
